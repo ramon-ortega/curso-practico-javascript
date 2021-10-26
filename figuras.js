@@ -61,3 +61,21 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+// Conexion Js con HTML
+
+function calculoPerimetro(){
+    const input = document.getElementById("calculoCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+
+    alert(perimetro);
+}
+
+function calculoArea(){
+    const input = document.getElementById("calculoCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+
+    alert(area);
+}
