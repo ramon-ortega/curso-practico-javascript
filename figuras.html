@@ -14,21 +14,29 @@
 
     <section>
         <form>
-            <label for="calculoCuadrado">Calcular perimetro y area del cuadrado</label>
+            <label>Calcular perimetro y area del cuadrado</label><br>
+            <label for="calculoCuadrado">Lado del cuadrado: </label>
             <input id="calculoCuadrado" type="number"/>
-            <button type="button" onclick="calculoPerimetro()">Calcular perímetro</button>
-            <button type="button" onclick="calculoArea()">Calcular área</button>
+            <button type="button" onclick="calculoPerimetroCuadrado()">Calcular perímetro</button>
+            <button type="button" onclick="calculoAreaCuadrado()">Calcular área</button>
         </form>
     </section>
 
+    <br>
+
     <section>
         <form>
-            <label for="calculoCuadrado">Calcular perimetro y area del rectangulo</label>
-            <input id="calculoCuadrado" type="number"/>
-            <button type="button" onclick="calculoPerimetro()">Calcular perímetro</button>
-            <button type="button" onclick="calculoArea()">Calcular área</button>
+            <label>Calcular perimetro y area del rectangulo</label><br>
+            <label for="calculoRectanguloBase">Base del rectangulo: </label>
+            <input id="calculoRectanguloBase" type="number"/>
+            <label for="calculoRectanguloAltura">Altura del rectangulo: </label>
+            <input id="calculoRectanguloAltura" type="number"/>
+            <button type="button" onclick="calculoPerimetroRectangulo()">Calcular perímetro</button>
+            <button type="button" onclick="calculoAreaRectangulo()">Calcular área</button>
         </form>
     </section>
+
+    <br>
 
     <section>
         <form>
@@ -38,6 +46,8 @@
             <button type="button" onclick="calculoArea()">Calcular área</button>
         </form>
     </section>
+
+    <br>
 
     <section>
         <form>

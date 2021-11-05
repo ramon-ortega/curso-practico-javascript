@@ -30,11 +30,11 @@ console.groupEnd();
 
 console.group("Rectangulo");
 
-function perimetroRectangulo(altura, base){
-    return 2 * (altura + base);
+function perimetroRectangulo(base, altura){
+    return (parseFloat(base) + parseFloat(altura)) * 2;
 }
 
-function areaRectangulo(altura, base){
+function areaRectangulo(base, altura){
     return base * altura;
 }
 
@@ -64,18 +64,39 @@ console.groupEnd();
 
 // Conexion Js con HTML
 
-function calculoPerimetro(){
+function calculoPerimetroCuadrado(){
     const input = document.getElementById("calculoCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-
+    
     alert(perimetro);
 }
 
-function calculoArea(){
+function calculoAreaCuadrado(){
     const input = document.getElementById("calculoCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
+
+    alert(area);
+}
+
+function calculoPerimetroRectangulo(){
+    const inputBase = document.getElementById("calculoRectanguloBase");
+    const inputAltura = document.getElementById("calculoRectanguloAltura");
+    const base = inputBase.value;
+    const altura = inputAltura.value;
+    const perimetro = perimetroRectangulo(base, altura);
+    
+    alert(perimetro);
+}
+
+function calculoAreaRectangulo(){
+    const inputBase = document.getElementById("calculoRectanguloBase");
+    const inputAltura = document.getElementById("calculoRectanguloAltura");
+    const base = inputBase.value;
+    const altura = inputAltura.value;
+
+    const area = areaRectangulo(base,altura);
 
     alert(area);
 }
