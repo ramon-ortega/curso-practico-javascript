@@ -124,3 +124,21 @@ function calculoAreaTriangulo(){
     
     alert(area);
 }
+
+function calculoPerimetroCirculo(){
+    const inputRadio = document.getElementById("calculoCirculo");
+    const radio = inputRadio.value;
+
+    const perimetro = perimetroCirculo(radio);
+
+    alert(perimetro);
+}
+
+function calculoAreaCirculo(){
+    const inputRadio = document.getElementById("calculoCirculo");
+    const radio = inputRadio.value;
+
+    const area = areaCirculo(radio);
+
+    alert(area);
+}
