@@ -62,6 +62,29 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
+// Triangulo Isoceles
+
+console.group("Triangulo Isoceles");
+    
+function perimetroTrianguloIso(lado1, lado2, base){
+    return parseFloat(lado1) + parseFloat(lado2) + parseFloat(base);
+}
+
+function alturaTrianguloIso(lado1, base){
+    const altura = Math.sqrt(Math.pow(lado1,2) - Math.pow((base/2),2) );
+    console.log(lado1);
+    console.log(base); 
+    console.log(altura);
+    return altura;
+}
+
+function areaTrianguloIso(lado1, base){
+    const altura = alturaTrianguloIso(lado1, base);
+    return (base * altura) / 2;
+}
+
+console.groupEnd();
+
 // Conexion Js con HTML
 
 function calculoPerimetroCuadrado(){
@@ -141,4 +164,36 @@ function calculoAreaCirculo(){
     const area = areaCirculo(radio);
 
     alert(area);
+}
+
+function calculoPerimetroTrianguloIso(){
+    const inputLado1 = document.getElementById("calculoTrianguloLado1Iso");
+    const inputLado2 = document.getElementById("calculoTrianguloLado2Iso");
+    const inputBase = document.getElementById("calculoTrianguloBaseIso");
+    const lado1 = inputLado1.value;
+    const lado2 = inputLado2.value;
+    const base = inputBase.value;
+
+    if (lado1 == lado2 && lado1 != base) {
+        const perimetro = perimetroTrianguloIso(lado1, lado2, base); 
+        alert(perimetro);
+    } else {
+        alert("Mete los datos de un triángulo isosceles");
+    }
+}
+
+function calculoAreaTrianguloIso(){
+    const inputLado1 = document.getElementById("calculoTrianguloLado1Iso");
+    const inputLado2 = document.getElementById("calculoTrianguloLado2Iso");
+    const inputBase = document.getElementById("calculoTrianguloBaseIso");
+    const lado1 = inputLado1.value;
+    const lado2 = inputLado2.value;
+    const base = inputBase.value;
+
+    if (lado1 == lado2 && lado1 != base) {
+        const area = areaTrianguloIso(lado1, base);
+        alert(area);
+    } else {
+        alert("Mete los datos de un triángulo isosceles");
+    }
 }
