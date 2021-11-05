@@ -40,10 +40,17 @@
 
     <section>
         <form>
-            <label for="calculoCuadrado">Calcular perimetro y area del triangulo</label>
-            <input id="calculoCuadrado" type="number"/>
-            <button type="button" onclick="calculoPerimetro()">Calcular perímetro</button>
-            <button type="button" onclick="calculoArea()">Calcular área</button>
+            <label>Calcular perimetro y area del triangulo</label> <br>
+            <label for="calculoTrianguloLado1">Lado 1 del triangulo: </label>
+            <input id="calculoTrianguloLado1" type="number"/>
+            <label for="calculoTrianguloLado2">Lado 2 del triangulo: </label>
+            <input id="calculoTrianguloLado2" type="number"/>
+            <label for="calculoTrianguloBase">Base del triangulo: </label>
+            <input id="calculoTrianguloBase" type="number"/>
+            <label for="calculoTrianguloAltura">Altura del triangulo: </label>
+            <input id="calculoTrianguloAltura" type="number"/>
+            <button type="button" onclick="calculoPerimetroTriangulo()">Calcular perímetro</button>
+            <button type="button" onclick="calculoAreaTriangulo()">Calcular área</button>
         </form>
     </section>
 
